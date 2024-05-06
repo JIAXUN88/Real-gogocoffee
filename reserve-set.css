@@ -1,0 +1,277 @@
+body{
+    font-family: Noto Sans TC;
+}
+
+/* <!-- 第二欄 --> */
+.banner {
+    width: 100%;
+    height: 180px;
+    background-color: #ccc;
+    background: linear-gradient(115deg, #F8C747 50%, transparent 50%) left center / 100% 100%,
+        url(./pic/reserve/reserve_banner.svg) right center / auto 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+}
+
+.banner-txt {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* padding: 50px 160px; */
+    
+}
+.banner-txt-cht, .banner-txt-eng{
+    /* margin: 30px; */
+    max-width: 500px;
+    text-align: center;
+}
+.banner-txt-cht{
+    margin: 12px 0 8px 0;
+    padding: 10px 0;
+}
+.banner-txt-eng{
+    margin: 12px 0 8px 0;
+    padding: 10px 0;
+}
+
+.banner-txt-cht{
+    margin-top: 20px;
+}
+.banner-txt-cht h2 {
+    font-weight: 800;
+    font-size: 28px;
+}
+.banner-txt-eng{
+    margin-top: -20px;
+}
+.banner-txt-eng p {
+    font-size: 70px;
+    font-family: lobster;
+    font-weight: 600;
+    color: #e78600;
+    letter-spacing: 6px;
+}
+
+@media only screen and (max-width: 768px) {
+.banner {
+background: url(./pic/reserve/reserve_banner_black.svg) center / auto 100%;
+}
+
+.banner-txt {
+align-items: center; 
+text-align: center; 
+}
+.banner-txt-cht{
+margin: 30px 0 15px 0;
+}
+.banner-txt-cht h2 {
+font-size: 28px;
+color: #F8C747;
+}
+
+.banner-txt-eng p {
+font-family: lobster;
+letter-spacing: 6px;
+font-size: 40px;
+}
+}
+
+
+/* 第三欄 */
+.path_container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0 0 0;
+}
+.reserve_path ul{
+    display: flex;
+    padding: 20px;
+}
+.reserve_path ul li{
+    padding: 4px 10px;
+    position: relative;
+}
+.reserve_path ul li a{
+    font-size: 16px;
+    color: #898888;
+    text-decoration: none;
+    font-family: Noto Sans TC;
+    font-weight: 300;
+}
+.reserve_path ul li + li::before{
+    content: "/";
+    color: #898888;
+    position: absolute;
+    left: 0;
+}
+@media only screen and (max-width: 768px) {
+    .reserve_path ul{
+        display: none;
+    }
+}
+
+/* 第四欄 */
+.narrate_container{
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.narrate_row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.narrate_txt_title{
+    text-align: center;
+    margin: 10px;
+}
+.narrate_txt_title p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.narrate_txt_con{
+    text-align: center;
+    padding: 0 100px;
+}
+.narrate_txt_con p{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+    .narrate_txt_con{
+        margin: 10px 20px 30px 0;
+        padding: 0 36px;
+    }
+    .narrate_txt_con p{
+        font-size: 1em;
+    }
+}
+.narrate_txt_con_write{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 100px;
+}
+.write_title{
+    margin:20px 0 16px 0;
+}
+.write_title p{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.write_con .write_con_name, .write_con_phone, .write_con_mail, .write_con_date, .write_con_time, .write_con_num{
+    padding: 12px 0;
+}
+input[type="text"], input[type="tel"], input[type="email"], input[type="date"], input[type="time"],input[type="number"] {
+    width: 300px; 
+    height: 24px; 
+}
+@media only screen and (max-width: 768px) {
+    input[type="text"], input[type="tel"], input[type="email"], input[type="date"], input[type="time"],input[type="number"] {
+        margin-top: 10px;
+    }
+}
+    
+
+
+.confirm_box{
+    position: absolute;
+    top: 50%;
+    left: 24%;
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #FFEFC6;
+    display: none;
+}
+.confirm_box_title{
+    text-align: center;
+    padding: 20px;
+}
+.confirm_box_title h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+.confirm_box_con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.confirm_box_con p {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+@media only screen and (max-width: 768px) {
+    .confirm_box{
+        width: 60%;
+        position: absolute;
+        top: 70%;
+        left: 10%;
+        padding: 30px;
+    }
+    .confirm_box_title h3{
+        font-size: 1em;
+    }
+    .confirm_box_con p{
+        font-size: .8em;
+    }
+}
+.confirm_button{
+    text-align: center;
+    margin-top: 100px;
+}
+
+#confirm_button{
+    width: 140px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Noto Sans TC;
+    border: 2px solid #F8C747;
+    background-color: #fff;
+}
+#confirm_button:hover{
+    background-color: #F8C747;
+    color: #4C3D27;
+}
+
+
+/* 第五欄 */
+.send_container{
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 100px 0;
+}
+.send_button{
+    text-align: right;
+}
+
+#send_button{
+    width: 140px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Noto Sans TC;
+    border: 2px solid #F8C747;
+    background-color: #fff;
+}
+#send_button:hover{
+    background-color: #F8C747;
+    color: #4C3D27;
+}

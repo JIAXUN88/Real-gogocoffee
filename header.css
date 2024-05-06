@@ -1,0 +1,84 @@
+/* 第一欄 */
+#menu-switch{
+    display: none;
+}
+header{
+    background-color: #4C3D27;
+    position: relative;
+    z-index: 1;
+}
+.header_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    /* outline: 2px solid red; */
+}
+.header_pic{
+    width: 12%;
+    max-width:80px;
+    margin-left: 24px;
+}
+.header_pic img{
+    width: 100%;
+}
+.header_hb{
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #F8C747;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header_hb span{
+    width: 80%;
+    height: 4px;
+    background-color: #4C3D27;
+}
+.header_right {
+    /* display: flex; */
+    padding: 6px 10px;
+    display: none;
+    position: absolute;
+    background-color: #4C3D27;
+    top: 100%;
+    right: 0;
+    width: 40%;
+    height: calc(100vh - 50px);
+    /* outline: 2px solid rgb(128, 255, 36); */
+}
+
+.header_right nav a{
+    color: #FCEBE3;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 4px 0;
+    margin: 10px 0;
+    display: block;
+    padding: 10px;
+    /* outline: 2px solid rgb(128, 255, 36); */
+}
+nav a:hover{
+    color: #F8C747;
+}
+#menu-switch:checked ~ header .header_container .header_row .header_right {
+    display: block;
+}
+@media screen and (min-width:768px) {
+    .header_hb{
+        display: none;
+    }
+    .header_right{
+    position: static;
+    height: unset;
+    width: unset;
+    display: flex;
+    }
+    .header_right nav{
+        display: flex;
+    }
+}

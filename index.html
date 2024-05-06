@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoGo咖啡廳</title>
+    <link rel="stylesheet" href="reset.css">
+
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/588030a060.js" crossorigin="anonymous"></script>
+
+    <!-- 字型 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+TC:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- 外檔連接 -->
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="gogocafe-set.css">
+
+    
+</head>
+
+<body>
+    <!-- 第一欄 -->
+    <input type="checkbox" name="" id="menu-switch">
+    <header>
+        <div class="header_container">
+            <div class="header_row">
+                <div class="header_pic">
+                    <a href="./index.html"><img src="./pic/logo.svg" alt="logo"></a>
+                </div>
+                <label for="menu-switch" class="header_hb">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="header_right">
+                    <nav>
+                        <a href="./news.html">最新消息</a>
+                        <a href="./product.html">商品介紹</a>
+                        <a href="./introduction.html">認識狗兒</a>
+                        <a href="./reserve.html">預約定位</a>
+                        <a href="./contact.html">聯絡我們</a>
+                        <a href="./login.html"><i class="fa-solid fa-user fa-xl" id="user" ></i></a>
+                    </nav>
+                    <div class="header_icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 第二欄 -->
+    <banner>
+        <div class="banner_box">
+            <div class="banner_title">
+                <h2>
+                    一杯咖啡，一個尾巴搖擺的悅耳旋律
+                </h2>
+                <h2>
+                    品嚐咖啡的同時，感受狗狗帶來的無盡愛意
+                </h2>
+            </div>
+            <div class="banner_con">
+                <p>
+                    我們的咖啡廳提供一個舒適的環境，讓您可以與我們的狗狗一起度過美好時光。
+                </p>
+            </div>
+        </div>
+        <div class="banner-box">
+            <div class="banner-_left"></div>
+            <div class="banner-_right"></div>
+        </div>
+        
+
+    </banner>
+
+
+    <!-- 第三欄 -->
+    <section  data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500" class="about_section">
+        <div class="about_container">
+            <div class="about_txt_title">
+                <h3>關於我們</h3>
+                <h3>About us</h3>
+            </div>
+            <div class="about_box">
+                <div class="about_pic"></div>
+                <div class="about_txt">
+                    <p>歡迎來到我們的GogoCafe，這是一個讓您與毛小孩一起享受愉快時光的地方！我們以提供歡樂舒適環境和美味的咖啡聞名，讓您能感到放鬆和愉悅。</p>
+                    <p>此外我們提供各種精心調的咖啡和狗狗主題的美食以及一系列的活動和服務讓您和您的寵物享受到最的樂趣。加入我們，讓我一起創造難忘的回憶和美時光！</p>
+                    <div class="about_arrow"></div>
+                    <div class="about_dog"></div>
+                </div>
+                
+            </div>
+        </div>
+                
+    </section>
+    
+
+    <!-- 第四欄 -->
+    <section class="news_section">
+        <div class="news_container">   
+            <div class="news_title">
+                <h3>最新消息</h3>
+                <h3>News</h3>
+            </div>
+
+            <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide-active" style="background-image:url(./pic/news-01.png)">
+                <div class="slide-content">
+                    <h2>特別活動</h2>
+                    <p>歡迎加入我們的寵物聚會！與您的毛孩子一起玩耍，參加有趣的遊戲和競賽，還有許多驚喜和獎品等著您。不要錯過這個絕佳的機會，立即報名參加，一起來享受我們的寵物聚會吧！</p>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(./pic/news-02.png)">
+                <div class="slide-content">
+                    <h2>新產品推出</h2>
+                    <p>加入我們，一起探索獨一無二的咖啡拉花造型活動！我們特別邀請了技藝嫻熟的咖啡師，在您眼前展示他們的魔法，將咖啡拉花造型締造成可愛的狗狗圖案。</p>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(./pic/news-03.png)">
+                <div class="slide-content">
+                    <h2>最新資訊</h2>
+                    <p>探索咖啡的神奇功效！我們將與您分享最新的科學研究和健康資訊，讓您了解咖啡的驚人效應，包括提神醒腦、增強注意力、改善心情等。</p>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(./pic/news-04.png)">
+                <div class="slide-content">
+                    <h2>客戶故事</h2>
+                    <p>一位老先生每天都來我們咖啡廳喝咖啡，帶著一本舊書。原來，那是他和已故妻子的婚禮禮物。他說，咖啡廳是他找到內心寧靜和溫暖的地方。</p>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(./pic/news-05.png)">
+                <div class="slide-content">
+                    <h2>健康提示</h2>
+                    <p>‧盡量避免過量飲用咖啡，以免影響睡眠品質。<br>‧選擇無糖或低糖的咖啡飲品，減少糖分攝入。<br>‧若患有胃潰瘍或其他胃部問題，請限制咖啡的攝入量。</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            on: {
+                slideChange: function () {
+                    var slides = document.querySelectorAll(".swiper-slide");
+                    slides.forEach(function (slide) {
+                        slide.classList.remove("slide-active");
+                    });
+                    slides[swiper.activeIndex].classList.add("slide-active");
+                },
+            },
+        });
+    </script>
+            <div class="news_button">
+                <a href="./news.html"><input type="button" value="more" name="name" id="news_button" ></a>
+            </div>
+    </section>
+
+
+    <!-- 第五欄 -->
+    <section class="product_section">
+        <div class="product_container">
+            <div class="product_row">
+                <div class="product_title">
+                    <h3>商品介紹</h3>
+                    <h3>Products</h3>
+                </div>
+                <div class="product_pic">
+                        <div class="product_pic_drink">
+                            <a href="./product.html"><div class="product_pic_drink_pic">
+                                <img src="./pic/drink.svg" alt="drink">
+                            </div></a>
+                            <div class="product_pic_drink_txt">
+                                <h3>飲品</h3>
+                                <p>
+                                從濃鬱的咖啡到香濃的奶茶，再到清爽的水果茶，每一杯都是獨一無二的美味體驗。 立即點擊，發現你的新寵！</p>
+                            </div>
+                            <div class="product_turn_right">
+                                <a href="./product.html"><img src="./pic/Vector 21.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="product_pic_food">
+                            <div class="product_pic_food_pic">
+                                <img src="./pic/food.svg" alt="food">
+                            </div>
+                            <div class="product_pic_food_txt">
+                                <h3>美食</h3>
+                                <p>
+                                從清爽的沙拉到豐盛的三明治，再到誘人的鬆餅和蛋糕，每一道都是精心制作的美味佳餚。立即點擊，满足您的味蕾！
+                                </p>
+                            </div>
+                            <div class="product_turn_right_food">
+                                <img src="./pic/Vector 21.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="product_pic_dessert">
+                            <div class="product_pic_dessert_pic">
+                                <img src="./pic/dessert.svg" alt="dessert">
+                            </div>
+                            <div class="product_pic_dessert_txt">
+                                <h3>甜點</h3>
+                                <p>
+                                精緻的蛋糕到香脆的餅乾，再到誘人的杯子蛋糕和香滑的布丁，每一款都是甜點界的精華。 快來點擊，盡情享受甜蜜時刻！</p>
+                            </div>
+                            <div class="product_turn_right">
+                                <img src="./pic/Vector 21.svg" alt="">
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+    <!-- 第六欄 -->
+    <section data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500" class="app_section">
+        <div class="app_container">
+            <div class="app_box">
+                <div class="app_pic">
+                    <img src="./pic/phone.svg" alt="">
+                </div>
+                <div class="app_tidy">
+                    <div class="app_txt">
+                        <div class="app_txt_title">
+                            <h3>體驗咖啡的新方式，馬上下載我們的APP！</h3>
+                        </div>
+                        <div class="app_txt_con">
+                            <p>探索咖啡的無限可能性！我們的APP為您帶來獨特的咖啡體驗，讓您輕鬆訂購您喜愛的飲品，查看最新的促銷和活動，並獲得專屬的優惠和禮品。</p><br>
+                            <p>
+                                立即下載，開始享受咖啡愛好者的專屬特權！
+                            </p>
+                        </div>
+                    </div>
+                    <div class="app_app">
+                        <div class="app_app_pic">
+                            <img src="./pic/google.svg" alt="">
+                        </div>
+                        <div class="app_app_pic">
+                            <img src="./pic/apple.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 第七欄 -->
+    <footer class="footer_bgc">
+        <div class="footer_container">
+            <div class="footer_logo_con">
+                <div class="footer_logo">
+                <a href="./index.html"><img src="./pic/logo.svg" alt="logo"></a>
+                </div>
+            <div class="footer_con">
+                <div class="footer_contact">
+                    <p>GoGo咖啡廳</p>
+                    <p>新竹市香山區香山路33號</p>
+                    <p>03-5553333</p>
+                </div>
+                <div class="footer_slice"></div>
+                <div class="footer_nav">
+                    <p><a href="./news.html">最新消息</a></p>
+                    <p><a href="./product.html">商品介紹</a></p>
+                    <p><a href="./introduction.html">認識狗兒</a></p>
+                    <p><a href="./reserve.html">預約訂位</a></p>
+                    <p><a href="./contact.html">聯絡我們</a></p>
+                </div>
+                <div class="footer_slice"></div>
+                <div class="footer_follow">
+                    <div class="footer_follow_title">
+                        <p>追蹤我們</p>
+                    </div>
+                    <div class="footer_follow_icon">
+                        <i class="fa-brands fa-facebook fa-xl" style="color: #FCEBE3;"></i>
+                        <i class="fa-brands fa-instagram fa-xl" style="color: #FCEBE3;"></i>
+                        <i class="fa-brands fa-line fa-xl" style="color: #FCEBE3;"></i>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            <div class="footer_remark">
+                <p>©Copyrights 2019 GoGo咖啡廳 All rights reserved
+                </p>
+                <p>本網站為TibaMe_前端設計工程師班學員專題成果作品本平台僅供學習、展示之用。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

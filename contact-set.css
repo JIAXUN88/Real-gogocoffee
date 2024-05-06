@@ -1,0 +1,271 @@
+body{
+    font-family: Noto Sans TC;
+}
+
+
+/* <!-- 第二欄 --> */
+.banner {
+    width: 100%;
+    height: 180px;
+    background-color: #ccc;
+    background: linear-gradient(115deg, #F8C747 50%, transparent 50%) left center / 100% 100%,
+        url(./pic/contact/contact_banner.svg) right center / auto 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+}
+
+.banner-txt {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* padding: 50px 160px; */
+    
+}
+.banner-txt-cht, .banner-txt-eng{
+    /* margin: 30px; */
+    max-width: 500px;
+    text-align: center;
+}
+.banner-txt-cht{
+    margin: 12px 0 8px 0;
+    padding: 10px 0;
+}
+.banner-txt-eng{
+    margin: 12px 0 8px 0;
+    padding: 10px 0;
+}
+
+.banner-txt-cht{
+    margin-top: 20px;
+}
+.banner-txt-cht h2 {
+    font-weight: 800;
+    font-size: 28px;
+}
+.banner-txt-eng{
+    margin-top: -20px;
+}
+.banner-txt-eng p {
+    font-size: 60px;
+    font-family: lobster;
+    font-weight: 600;
+    color: #e78600;
+    letter-spacing: 6px;
+}
+
+@media only screen and (max-width: 768px) {
+.banner {
+background: url(./pic/contact/contact_banner_black.svg) center / auto 100%;
+}
+
+.banner-txt {
+align-items: center; 
+text-align: center; 
+}
+.banner-txt-cht{
+margin: 30px 0 15px 0;
+}
+.banner-txt-cht h2 {
+font-size: 28px;
+color: #F8C747;
+}
+
+.banner-txt-eng p {
+font-family: lobster;
+letter-spacing: 6px;
+font-size: 40px;
+}
+}
+
+/* 第三欄 */
+.path_container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.reserve_path ul{
+    display: flex;
+    padding: 20px;
+}
+.reserve_path ul li{
+    padding: 4px 10px;
+    position: relative;
+}
+.reserve_path ul li a{
+    font-size: 16px;
+    color: #898888;
+    text-decoration: none;
+    font-family: Noto Sans TC;
+    font-weight: 300;
+}
+.reserve_path ul li + li::before{
+    content: "/";
+    color: #898888;
+    position: absolute;
+    left: 0;
+}
+@media only screen and (max-width: 768px) {
+    .reserve_path ul{
+        display: none;
+    }
+}
+
+
+
+/* 第四欄 */
+.map_container{
+    max-width: 1200px;
+    margin: 40px auto;
+}
+.map_row{
+    display: flex;
+    justify-content: center;
+}
+.map_map{
+    max-width: 500px;
+    width: 100%;
+}
+.map_map iframe{
+    width: 100%;
+}
+.map_txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFEFC6;
+}
+.map_txt_con{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.map_txt .map_txt_con p{
+    font-size: 16px;
+    margin: 28px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.map_txt_icon{
+    text-align: center;
+}
+.map_txt .map_txt_icon .fa-brands{
+    margin: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .map_container{
+        width: 90%;
+    }
+    .map_row{
+        display: flex;
+        flex-direction: column;
+    }
+    .map_map{
+        width: 100%;
+        margin: auto;
+    }
+    .map_txt{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .map_txt_icon{
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* 第五欄 */
+.form_container{
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.form_row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form_txt{
+    max-width:500px;
+    width: 100%;
+}
+.form_txt_title{
+    margin: 40px;
+    text-align: center;
+}
+.form_txt_title p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.form_txt_con{
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
+.form_txt_con_np{
+    display: flex;
+    justify-content: space-between;
+}
+.form_txt_con .form_txt_con_np label, .form_con_mail label, .form_con_textarea p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.form_con_name p, .form_con_phone p, .form_con_mail p, .form_con_textarea p{
+    margin: 10px 0;
+}
+#textareainput{
+    border-radius: 6px;
+}
+input[type="text"], input[type="tel"], input[type="email"]{
+    max-width: 490px; 
+    width: 100%;
+    height: 24px; 
+}
+#textareainput{
+    max-width: 490px;
+    width: 100%;
+}
+@media only screen and (max-width: 768px) {
+    .form_container{
+        width: 90%;
+    }
+    .form_txt{
+        width: 90%;
+    }
+    .form_txt_con{
+        width: 100%;
+        margin: auto;
+    }
+    
+}
+
+/* 第六欄 */
+.send_container{
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 100px 0;
+}
+.send_button{
+    text-align: right;
+}
+
+#send_button{
+    width: 140px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Noto Sans TC;
+    border: 2px solid #F8C747;
+    background-color: #fff;
+}
+#send_button:hover{
+    background-color: #F8C747;
+    color: #4C3D27;
+}

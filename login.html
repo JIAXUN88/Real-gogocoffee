@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoGo咖啡廳-會員登入</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="login-set.css">
+    
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/588030a060.js" crossorigin="anonymous"></script>
+
+    <!-- 字型 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- 外檔連接 -->
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="login-set.css">
+    
+</head>
+<body>
+    
+    <!-- 第一欄 -->
+    <input type="checkbox" name="" id="menu-switch">
+    <header>
+        <div class="header_container">
+            <div class="header_row">
+                <div class="header_pic">
+                    <a href="./index.html"><img src="./pic/logo.svg" alt="logo"></a>
+                </div>
+                <label for="menu-switch" class="header_hb">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="header_right">
+                    <nav>
+                        <a href="./news.html">最新消息</a>
+                        <a href="./product.html">商品介紹</a>
+                        <a href="./introduction.html">認識狗兒</a>
+                        <a href="./reserve.html">預約定位</a>
+                        <a href="./contact.html">聯絡我們</a>
+                        <a href="./login.html"><i class="fa-solid fa-user fa-xl"></i></a>
+                    </nav>
+                    <div class="header_icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- 第二欄 -->
+    <section class="login_section">
+        <div class="login_container">
+            <div class="login_row">
+                <div class="login_left">
+                    <div class="login_left_con">
+                        <div class="login_title">
+                            <div class="login_title_cht">
+                                <p>會員登入</p>
+                            </div>
+                            &nbsp;&nbsp;&nbsp;
+                            <p class="slash">/</p>
+                            &nbsp;&nbsp;&nbsp;
+                            <div class="login_title_eng">
+                                <span>Login</span>
+                            </div>  
+                        </div>
+                        <div class="login_write">
+                            <div class="login_con_name">
+                                <label>
+                                    使用者名稱：
+                                    <input type="text" id="nameinput">
+                                </label>
+                            </div>
+                            <div class="login_con_password">
+                                <label>
+                                    密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;碼：
+                                    <input type="password" minlength="6" id="passwordinput">
+                                </label>
+                            </div>
+                            <div class="login_title_forget">
+                                <p>忘記密碼</p>
+                            </div>
+                        </div>
+                        <div class="login_title_btn">
+                            <div class="login_button_sign">
+                                <a href="./sign.html"><input type="button" value="立即註冊" name="name" id="login_button_sign" ></a>
+                            </div>
+                            <div class="login_button_login">
+                                <input type="button" value="登入" name="name" id="login_button_login" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login_left_other">
+                        <div class="login_left_other_title">
+                            <p>其他方式登入</p>
+                        </div>
+                        <div class="login_left_other_community">
+                            <div class="login_left_other_google">
+                                <div class="login_left_other_google_icon">
+                                    <img src="./pic/member/google.png" alt="">
+                                </div>
+                                <div class="login_left_other_google_txt">以Google方式登入</div>
+                            </div>
+                            <div class="login_left_other_fb">
+                                <div class="login_left_other_fb_icon">
+                                    <img src="./pic/member/facebook.png" alt="">
+                                </div>
+                                <div class="login_left_other_fb_txt">以Facebook方式登入</div>
+                            </div>
+                            <div class="login_left_other_line">
+                                <div class="login_left_other_line_icon">
+                                    <img src="./pic/member/line.png" alt="">
+                                </div>
+                                <div class="login_left_other_line_txt">以Line方式登入</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="login_right">
+                    <div class="login_right_pic"></div>
+                    <!-- <img src="./pic/member/bgc.png" alt=""> -->
+                    <div class="login_right_txt">
+                        <div class="login_right_txt_title">
+                            <p>歡迎回來！ 登入以繼續享受我們的服務。</p>
+                        </div>
+                        <div class="login_right_txt_con">
+                            <p> 我們非常高興再次見到您。 請您登入您的帳戶，繼續探索我們的精彩內容和特別優惠。 感謝您對我們的支持，讓我們一起創造更多美好的時刻！</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="login_slash"></div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    
+
+</body>
+</html>

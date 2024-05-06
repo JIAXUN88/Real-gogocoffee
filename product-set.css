@@ -1,0 +1,435 @@
+
+
+/* <!-- 第二欄 --> */
+.banner {
+    width: 100%;
+    height: 180px;
+    background-color: #ccc;
+    background: linear-gradient(115deg, #F8C747 50%, transparent 50%) left center / 100% 100%,
+        url(./pic/product/product_bgc.svg) right center / auto 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+}
+
+.banner-txt {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* padding: 50px 160px; */
+}
+.banner-txt-cht, .banner-txt-eng{
+    /* margin: 30px; */
+    max-width: 500px;
+    text-align: center;
+}
+.banner-txt-cht{
+    margin: 12px 0 8px 0;
+    padding: 10px 0;
+}
+.banner-txt-eng{
+    margin: 12px 0 8px 0;
+    padding: 10px 0;
+}
+
+.banner-txt-cht{
+    margin-top: 20px;
+}
+.banner-txt-cht h2 {
+    font-weight: 800;
+    font-size: 28px;
+}
+.banner-txt-eng{
+    margin-top: -20px;
+}
+.banner-txt-eng p {
+    font-size: 50px;
+    font-family: lobster;
+    font-weight: 800;
+    color: #e78600;
+    letter-spacing: 6px;
+}
+
+@media only screen and (max-width: 768px) {
+    .banner {
+    background: url(./pic/product/product_bgc_black.svg) center / auto 100%;
+    
+    }
+    .banner-txt {
+    align-items: center; 
+    text-align: center; 
+    }
+    .banner-txt-cht{
+    margin: 30px 0 15px 0;
+    }
+    .banner-txt-cht h2 {
+    font-size: 28px;
+    color: #F8C747;
+    }
+
+    .banner-txt-eng p {
+    font-family: lobster;
+    letter-spacing: 6px;
+    font-size: 40px;
+    }
+}
+
+
+/* 第三欄 */
+.select_container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0 100px 0;
+}
+.select_path ul{
+    display: flex;
+    padding: 20px;
+}
+.select_path ul li{
+    padding: 4px 10px;
+    position: relative;
+}
+.select_path ul li a{
+    font-size: 16px;
+    color: #898888;
+    text-decoration: none;
+    font-family: Noto Sans TC;
+    font-weight: 300;
+}
+.select_path ul li + li::before{
+    content: "/";
+    color: #898888;
+    position: absolute;
+    left: 0;
+}
+@media only screen and (max-width: 768px) {
+    .select_path ul{
+        display: none;
+    }
+}
+.select_item{
+    max-width: 1600px;
+    display: flex;
+    justify-content: center;
+}
+.select_item p{
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 1% 4%;
+    margin: 1% 5%;
+    border: 2px solid #F8C747;
+}
+@media only screen and (max-width: 768px) {
+    .select_item{
+        width: 100%;
+    }
+    .select_item p{
+        text-align: center;
+        line-height: 30px;
+        padding: 1% 6%;
+        margin: 5%;
+    }
+}
+.select_item .select_drink{
+    text-align: center;
+    border: none;
+    background-color: #4C3D27;
+    color: #FCEBE3;
+    outline: 1px solid red;
+}
+
+
+
+
+/* 第四欄 */
+.drink_container{
+    max-width: 1200px;
+    margin: auto;
+}
+.drink_row{
+    margin: 10px 0 100px 0;
+}
+.coffee_series{
+    display: flex;
+    justify-content: center;
+}
+.coffee_series_left{
+    max-width: 400px;
+    width: 100%;
+    height: 360px;
+    margin: 50px -100px 0 0;
+    z-index: 5;
+}
+.coffee_series_left img{
+    width: 100%;
+    outline: 3px solid #fff
+}
+.coffee_series_right{
+    width: 600px;
+    height: 460px;
+    position: relative;
+}
+.coffee_series_right_txt_bgc{
+    background-image: url(./pic/product/product-coffee-right.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    filter:brightness(40%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.milktea_series_right_txt_bgc{
+    background-image: url(./pic/product/product_milk_tea_right.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    filter:brightness(40%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.fruittea_series_right_txt_bgc{
+    background-image: url(./pic/product/product_fruit_tea_right.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    filter:brightness(40%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.coffee_series_right_txt{
+    max-width: 400px;
+    position: absolute;
+    top: 16%;
+    left: 26%;
+}
+.coffee_series_right .coffee_series_right_title p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FCEBE3;
+    letter-spacing: 2px;
+}
+.coffee_series_right .coffee_series_right_con ul li{
+    font-size: 16px;
+    color: #FCEBE3;
+    margin: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-weight: 300;
+}
+@media only screen and (max-width: 1024px) {
+    .coffee_series{
+        margin: 20px;
+    }
+    .coffee_series_left{
+        max-width: 300px;
+        width: 100%;
+        margin-top: 10%;
+        margin-left: 2%;
+    }
+    .coffee_series_right_txt{
+        width: 72%;
+        position: absolute;
+        top: 16%;
+        left: 26%;
+    }
+    .coffee_series_right .coffee_series_right_title{
+        margin-left: 18px;
+    }
+    .coffee_series_right .coffee_series_right_title p{
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+    .coffee_series_right .coffee_series_right_con ul li{
+        font-size: 1em;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .coffee_series_left{
+        display: none;
+    }
+    .coffee_series_right_txt{
+        text-align: center;
+        width: 80%;
+        position: absolute;
+        top: 14%;
+        left: 10%;
+    }
+    .coffee_series_right .coffee_series_right_title p{
+        text-align: center;
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+    .coffee_series_right .coffee_series_right_con ul li{
+        font-size: .8em;
+    }
+}
+
+
+
+
+
+
+
+
+/* .drink_row{
+    outline: 1px solid red;
+    position: relative;
+}
+.coffee_series{
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    outline: 2px solid rgb(2, 11, 28);
+}
+.coffee_series_left{
+    max-width: 400px;
+    height: 356px;
+    margin: 4% -10% 4% 0 ;
+    border: 4px solid #fff;
+    z-index: 4;
+}
+.coffee_series .coffee_series_left img{
+    max-width: 100%;
+    height: auto;
+}
+.coffee_series_right{
+    max-width: 600px;
+    position: relative;
+}
+.coffee_series_right img{
+    width: 100%;
+    vertical-align: middle;
+}
+@media only screen and (max-width: 768px) {
+    
+}
+.coffee_series_right_txt_bgc{
+    background-image: url(./pic/product/product-coffee-right.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 460px;
+    filter:brightness(40%);
+}
+.coffee_series_right_txt{
+    position: absolute;
+    top: 14%;
+    left: 26%;
+}
+.coffee_series_right .coffee_series_right_title{
+    text-align: center;
+}
+.coffee_series_right .coffee_series_right_title p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #FCEBE3;
+    letter-spacing: 2px;
+}
+.coffee_series_right .coffee_series_right_con ul li{
+    font-size: 16px;
+    color: #FCEBE3;
+    margin: 20px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-weight: 300;
+}
+.drink_coffee_box{
+    width: 900px;
+    height: 460px;
+    border-top: 2px solid #F8C747;
+    border-left: 2px solid #F8C747;
+    border-bottom: 2px solid #F8C747;
+    position: absolute;
+    top: 5%;
+    right: -2.8%;
+    z-index: -5;
+} */
+
+/* 第五欄 */
+.bgc_product_milk_tea { 
+    width: 120px;
+    position: absolute;
+    right: 260px;
+    top: -120px;
+    z-index: 2;
+}
+.bgc_product_milk_tea img{
+    width: 100%;
+}
+/* .drink_row .drink_milktea_box{
+    width: 900px;
+    height: 460px;
+    border-top: 6px solid #F8C747;
+    border-right: 6px solid #F8C747;
+    border-bottom: 6px solid #F8C747;
+    position: absolute;
+    top: 50px;
+    left:0px;
+    z-index: -3;
+} */
+.drink_bgc_slice4 { 
+    width: 890px;
+    position: absolute;
+    left: 80px;
+    top: 80px;
+    z-index: -4;
+}
+.drink_bgc_slice4 img{
+    width: 100%;
+}
+
+/* 第六欄 */
+.bgc_product_fruit_tea { 
+    width: 120px;
+    position: absolute;
+    right: 260px;
+    top: -100px;
+    z-index: 2;
+}
+.bgc_product_fruit_tea img{
+    width: 100%;
+}
+.drink_bgc_coffee-cup { 
+    width: 180px;
+    position: absolute;
+    left: 50px;
+    top: 90px;
+}
+.drink_bgc_coffee-cup img{
+    width: 100%;
+}
+.drink_bgc_slice5 { 
+    width: 660px;
+    position: absolute;
+    left: 160px;
+    bottom: 0px; 
+}
+.drink_bgc_slice5 img{
+    width: 100%;
+}
+.drink_bgc_people_dirnk { 
+    width: 180px;
+    position: absolute;
+    right: 200px;
+    bottom: 0px; 
+}
+.drink_bgc_people_dirnk img{
+    width: 100%;
+    vertical-align: middle;
+}
+

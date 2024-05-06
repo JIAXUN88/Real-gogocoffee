@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoGo咖啡廳-認識狗兒</title>
+    <link rel="stylesheet" href="reset.css">
+
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/588030a060.js" crossorigin="anonymous"></script>
+
+    <!-- 字型 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- 外檔連接 -->
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="introduction-set.css">
+    
+
+</head>
+<body>
+    
+    <!-- 第一欄 -->
+    <input type="checkbox" name="" id="menu-switch">
+    <header>
+        <div class="header_container">
+            <div class="header_row">
+                <div class="header_pic">
+                    <a href="./index.html"><img src="./pic/logo.svg" alt="logo"></a>
+                </div>
+                <label for="menu-switch" class="header_hb">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="header_right">
+                    <nav>
+                        <a href="./news.html">最新消息</a>
+                        <a href="./product.html">商品介紹</a>
+                        <a href="./introduction.html">認識狗兒</a>
+                        <a href="./reserve.html">預約定位</a>
+                        <a href="./contact.html">聯絡我們</a>
+                        <a href="./login.html"><i class="fa-solid fa-user fa-xl" id="user"></i></a>
+                    </nav>
+                    <div class="header_icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 第二欄 -->
+    <banner>
+        <div class="banner">
+            <div class="container">
+                <div class="banner-txt">
+                    <div class="banner-txt-cht">
+                        <h2>認識狗兒</h2>
+                    </div>
+                    <div class="banner-txt-eng">
+                        <p>Introduction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </banner>
+
+
+    <!-- 第三欄 -->
+    <section>
+        <div class="meet-container">
+            <div class="meet_path">
+        <ul>
+            <li><a href="./index.html">首頁</a></li>
+            <li><a href="./introduction.html">認識狗兒</a></li>
+        </ul>
+        </div>
+    </section>
+
+
+    <!-- 第四欄 -->
+    <section>
+        <div class="meet_circle">
+        <div class="meet_circle_1">
+            <img src="./pic/Introduction/introduction_circle1.png" alt="">
+        </div>
+        <div class="meet_circle_2">
+            <img src="./pic/Introduction/introduction_circle2.png" alt="">
+        </div>
+        <div class="meet_circle_3">
+            <img src="./pic/Introduction/introduction_circle3.png" alt="">
+        </div>
+        <div class="meet_circle_4">
+            <img src="./pic/Introduction/introduction_circle4.png" alt="">
+        </div>
+        <div class="meet_circle_5">
+            <img src="./pic/Introduction/introduction_circle5.png" alt="">
+        </div>
+        <div class="meet_circle_6">
+            <img src="./pic/Introduction/introduction_circle6.png" alt="">
+        </div>
+        </div>
+    </section>
+    
+    <script>
+        // JavaScript部分
+        var circles = document.querySelectorAll('.meet_circle > div');
+
+        circles.forEach(circle => {
+            circle.addEventListener('click', () => {
+                // 恢復所有圖片的暗色和去除外框
+                circles.forEach(c => {
+                    c.querySelector('img').style.filter = 'brightness(40%)';
+                    c.classList.remove('meet_circle_1');
+                });
+
+                // 點擊的圖片恢復正常顏色並加上黃色外框
+                circle.querySelector('img').style.filter = 'brightness(100%)';
+                circle.classList.add('meet_circle_1');
+            });
+        });
+    </script>
+    
+
+
+    <!-- 第五欄 -->
+    <section class="photo_section">
+        <div class="photo_container">
+            <div class="photo_row">
+                <!-- 柴犬 -->
+                <div class="photo_intr photo_intr1">
+                    <div class="photo_pic">
+                        <div class="photo_pic_big">
+                            <img src="./dog/00.svg" alt="">
+                        </div>
+                        <div class="photo_pic_small">
+                            <img src="./dog/00.svg" class="small">
+                            <img src="./dog/01.svg" class="small">
+                            <img src="./dog/02.svg" class="small">
+                            <img src="./dog/03.svg" class="small">
+                            <img src="./dog/04.svg" class="small">
+                        </div>
+                    </div>
+                        <div class="photo_txt">
+                            <div class="photo_txt_title">
+                                <p>小太郎</p>
+                            </div>
+                            <div class="photo_txt_con">
+                                <div class="photo_txt_con_type">
+                                    <p>犬種：柴犬</p>
+                                    <p>年齡：1歲</p>
+                                    <p>性別：公</p>
+                                </div>
+                                <div class="photo_txt_con_intr">
+                                    <p>自我介紹：<br>
+                                        這是一隻可愛的柴犬，它的名字叫做「小太郎」。 小太郎是一隻非常友善和活潑的狗狗，它總是充滿活力，喜歡和人們互動。 無論是在咖啡廳或戶外活動中，小太郎都能帶給你無盡的歡樂和快樂。 它有著濃密的毛髮和一雙靈活的眼睛，總是會吸引周遭人的注意。 無論你是想和它玩耍，還是想給它拍照留念，小太郎都會成為你心中的最佳夥伴。 快來和小太郎一起度過愉快的時光吧！</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!-- 哈士奇 -->
+                <div class="photo_intr photo_intr2">
+                    <div class="photo_pic">
+                        <div class="photo_pic_big">
+                            <img src="./dog/05.svg" alt="">
+                        </div>
+                        <div class="photo_pic_small">
+                            <img src="./dog/05.svg" alt="">
+                            <img src="./dog/06.svg" alt="">
+                            <img src="./dog/07.svg" alt="">
+                            <img src="./dog/08.svg" alt="">
+                            <img src="./dog/09.svg" alt="">
+                        </div>
+                    </div>
+                        <div class="photo_txt">
+                            <div class="photo_txt_title">
+                                <p>冰塊</p>
+                            </div>
+                            <div class="photo_txt_con">
+                                <div class="photo_txt_con_type">
+                                    <p>犬種：哈士奇</p>
+                                    <p>年齡：3歲</p>
+                                    <p>性別：母</p>
+                                </div>
+                                <div class="photo_txt_con_intr">
+                                    <p>自我介紹：<br>
+                                        冰塊是我們咖啡廳的驕傲，她是一個充滿活力和好奇心的哈士奇寶貝！冰塊有著一雙明亮藍色的眼睛，猶如冰塊般清澈透明。她喜歡在陽光下奔跑，追逐風中的氣味，並在附近的公園裡與其他狗狗玩耍。雖然她有時候可能會有些頑皮，但她的溫柔和親和力總是能夠感染周圍的每一個人。冰塊也喜歡被撫摸和寵愛，她會在你的膝蓋上蜷縮，享受與你的親密時光。在我們的咖啡廳，冰塊總是歡迎客人的到來，與她一起度過美好時光，絕對會是一個難忘的體驗！</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!-- 黃金獵犬 -->
+                <div class="photo_intr photo_intr3">
+                    <div class="photo_pic">
+                        <div class="photo_pic_big">
+                            <img src="./dog/10.svg" alt="">
+                        </div>
+                        <div class="photo_pic_small">
+                            <img src="./dog/10.svg" alt="">
+                            <img src="./dog/11.svg" alt="">
+                            <img src="./dog/12.svg" alt="">
+                            <img src="./dog/13.svg" alt="">
+                            <img src="./dog/14.svg" alt="">
+                        </div>
+                    </div>
+                        <div class="photo_txt">
+                            <div class="photo_txt_title">
+                                <p>金毛</p>
+                            </div>
+                            <div class="photo_txt_con">
+                                <div class="photo_txt_con_type">
+                                    <p>犬種：黃金獵犬</p>
+                                    <p>年齡：4歲</p>
+                                    <p>性別：公</p>
+                                </div>
+                                <div class="photo_txt_con_intr">
+                                    <p>自我介紹：<br>
+                                        金毛是我們咖啡廳的大寶貝！他是一隻非常友善和溫柔的黃金獵犬，對每個人都充滿熱情。金毛喜歡與顧客玩耍，尤其是和小朋友一起玩球。他的愛心和忠誠讓他成為我們咖啡廳的明星，歡迎您來與他互動，享受與金毛一起的美好時光！</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!-- 薩摩耶犬 -->
+                <div class="photo_intr photo_intr4">
+                    <div class="photo_pic">
+                        <div class="photo_pic_big">
+                            <img src="./dog/15.svg" alt="">
+                        </div>
+                        <div class="photo_pic_small">
+                            <img src="./dog/15.svg" alt="">
+                            <img src="./dog/16.svg" alt="">
+                            <img src="./dog/17.svg" alt="">
+                            <img src="./dog/18.svg" alt="">
+                            <img src="./dog/19.svg" alt="">
+                        </div>
+                    </div>
+                        <div class="photo_txt">
+                            <div class="photo_txt_title">
+                                <p>雪球</p>
+                            </div>
+                            <div class="photo_txt_con">
+                                <div class="photo_txt_con_type">
+                                    <p>犬種：薩摩耶犬</p>
+                                    <p>年齡：3歲</p>
+                                    <p>性別：母</p>
+                                </div>
+                                <div class="photo_txt_con_intr">
+                                    <p>自我介紹：<br>
+                                        雪球是一個標誌性的薩摩耶犬，擁有一身柔軟如雪的白色毛髮和熱情奔放的個性。她喜歡在戶外奔跑和探險，對新事物充滿好奇心。雪球非常友善，喜歡與人類和其他狗狗互動，是一個溫暖的伴侶。歡迎您來我們的咖啡廳，與雪球一起度過美好時光！</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!-- 比格獵犬 -->
+                <div class="photo_intr photo_intr5">
+                    <div class="photo_pic">
+                        <div class="photo_pic_big">
+                            <img src="./dog/20.svg" alt="">
+                        </div>
+                        <div class="photo_pic_small">
+                            <img src="./dog/20.svg" alt="">
+                            <img src="./dog/21.svg" alt="">
+                            <img src="./dog/22.svg" alt="">
+                            <img src="./dog/23.svg" alt="">
+                            <img src="./dog/24.svg" alt="">
+                        </div>
+                    </div>
+                        <div class="photo_txt">
+                            <div class="photo_txt_title">
+                                <p>貝拉</p>
+                            </div>
+                            <div class="photo_txt_con">
+                                <div class="photo_txt_con_type">
+                                    <p>犬種：比格獵犬</p>
+                                    <p>年齡：2歲</p>
+                                    <p>性別：母</p>
+                                </div>
+                                <div class="photo_txt_con_intr">
+                                    <p>自我介紹：<br>
+                                        貝拉是我們咖啡廳的活潑開朗的比格獵犬！她有著敏銳的嗅覺和無限的活力，喜歡在戶外探險和追逐味道。貝拉非常友善，喜歡與人類和其他狗狗一起玩耍，是一個充滿活力的伴侶。無論您是喜歡戶外活動還是喜歡與狗狗互動的人，貝拉都會是您的最佳選擇！</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!-- 貴賓犬 -->
+                <div class="photo_intr photo_intr6">
+                    <div class="photo_pic">
+                        <div class="photo_pic_big">
+                            <img src="./dog/25.svg" alt="">
+                        </div>
+                        <div class="photo_pic_small">
+                            <img src="./dog/25.svg" alt="">
+                            <img src="./dog/26.svg" alt="">
+                            <img src="./dog/27.svg" alt="">
+                            <img src="./dog/28.svg" alt="">
+                            <img src="./dog/29.svg" alt="">
+                        </div>
+                    </div>
+                        <div class="photo_txt">
+                            <div class="photo_txt_title">
+                                <p>寶寶</p>
+                            </div>
+                            <div class="photo_txt_con">
+                                <div class="photo_txt_con_type">
+                                    <p>犬種：貴賓犬</p>
+                                    <p>年齡：1歲</p>
+                                    <p>性別：公</p>
+                                </div>
+                                <div class="photo_txt_con_intr">
+                                    <p>自我介紹：<br>
+                                        寶寶是我們咖啡廳的可愛貴賓犬！儘管他年紀還小，但他已經展現出了非常成熟和溫柔的個性。寶寶喜歡被人撫摸和寵愛，並且非常適應與其他狗狗一起玩耍。他聰明好學，喜歡學習新的技巧和指令，是一個忠實的伴侶。歡迎您來我們的咖啡廳，與寶寶一起度過愉快時光！</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>// 獲取所有photo_intr類的小圖片元素
+var allPhotoIntrs = document.querySelectorAll('.photo_intr, .photo_intr2, .photo_intr3, .photo_intr4, .photo_intr5, .photo_intr6');
+
+// 遍歷每個photo_intr類
+allPhotoIntrs.forEach(function(photoIntr) {
+    // 獲取當前photo_intr類下的所有小圖片元素
+    var smallPics = photoIntr.querySelectorAll('.photo_pic_small img');
+
+    // 為每個小圖片添加點擊事件監聽器
+    smallPics.forEach(function(smallPic) {
+        smallPic.addEventListener('click', function() {
+            // 移除當前photo_intr類下所有小圖片的亮度濾鏡效果
+            smallPics.forEach(function(pic) {
+                pic.style.filter = "brightness(40%)";
+            });
+
+            // 將被點擊的小圖片的亮度設置為正常
+            this.style.filter = "brightness(100%)";
+
+            // 獲取對應的大圖片元素
+            var bigPic = this.closest('.photo_intr').querySelector('.photo_pic_big img');
+
+            // 獲取被點擊的小圖片的src屬性值
+            var newSrc = this.getAttribute('src');
+
+            // 將大圖片的src屬性值設置為被點擊的小圖片的src屬性值
+            bigPic.setAttribute('src', newSrc);
+        });
+    });
+});
+</script>
+    
+        <script>
+            // JavaScript部分
+        var circles = document.querySelectorAll('.meet_circle > div');
+        const photo1 = document.querySelector('.photo_intr');
+        const photo2 = document.querySelector('.photo_intr2');
+        const photo3 = document.querySelector('.photo_intr3');
+        const photo4 = document.querySelector('.photo_intr4');
+        const photo5 = document.querySelector('.photo_intr5');
+        const photo6 = document.querySelector('.photo_intr6');
+
+        circles.forEach((circle, index) => {
+        circle.addEventListener('click', () => {
+        // 恢復所有圖片的暗色和去除外框
+        circles.forEach(c => {
+            c.querySelector('img').style.filter = 'brightness(40%)';
+            c.classList.remove('meet_circle_1');
+        });
+
+        // 點擊的圖片恢復正常顏色並加上黃色外框
+        circle.querySelector('img').style.filter = 'brightness(100%)';
+        circle.classList.add('meet_circle_1');
+
+        // 根據點擊的圖片索引切換相應的照片內容
+        if (index === 1) {
+            photo1.style.display = 'none';
+            photo2.style.display = 'flex';
+            photo3.style.display = 'none';
+            photo4.style.display = 'none';
+            photo5.style.display = 'none';
+            photo6.style.display = 'none';
+        } else if (index === 2) {
+            photo1.style.display = 'none';
+            photo2.style.display = 'none';
+            photo3.style.display = 'flex';
+            photo4.style.display = 'none';
+            photo5.style.display = 'none';
+            photo6.style.display = 'none';
+        } else if (index === 3) {
+            photo1.style.display = 'none';
+            photo2.style.display = 'none';
+            photo3.style.display = 'none';
+            photo4.style.display = 'flex';
+            photo5.style.display = 'none';
+            photo6.style.display = 'none';
+        } else if (index === 4) {
+            photo1.style.display = 'none';
+            photo2.style.display = 'none';
+            photo3.style.display = 'none';
+            photo4.style.display = 'none';
+            photo5.style.display = 'flex';
+            photo6.style.display = 'none';
+        } else if (index === 5) {
+            photo1.style.display = 'none';
+            photo2.style.display = 'none';
+            photo3.style.display = 'none';
+            photo4.style.display = 'none';
+            photo5.style.display = 'none';
+            photo6.style.display = 'flex';
+        } else {
+            photo1.style.display = 'flex';
+            photo2.style.display = 'none';
+            photo3.style.display = 'none';
+            photo4.style.display = 'none';
+            photo5.style.display = 'none';
+            photo6.style.display = 'none';
+        }
+    });
+});
+
+        </script>
+        
+    
+    
+
+
+    <!-- 第六欄 -->
+    <footer class="footer_bgc">
+        <div class="footer_container">
+            <div class="footer_logo_con">
+                <div class="footer_logo">
+                <a href="./index.html"><img src="./pic/logo.svg" alt="logo"></a>
+                </div>
+            <div class="footer_con">
+                <div class="footer_contact">
+                    <p>GoGo咖啡廳</p>
+                    <p>新竹市香山區香山路33號</p>
+                    <p>03-5553333</p>
+                </div>
+                <div class="footer_slice"></div>
+                <div class="footer_nav">
+                    <p><a href="./news.html">最新消息</a></p>
+                    <p><a href="./product.html">商品介紹</a></p>
+                    <p><a href="./introduction.html">認識狗兒</a></p>
+                    <p><a href="./reserve.html">預約訂位</a></p>
+                    <p><a href="./contact.html">聯絡我們</a></p>
+                </div>
+                <div class="footer_slice"></div>
+                <div class="footer_follow">
+                    <div class="footer_follow_title">
+                        <p>追蹤我們</p>
+                    </div>
+                    <div class="footer_follow_icon">
+                        <i class="fa-brands fa-facebook fa-xl" style="color: #FCEBE3;"></i>
+                        <i class="fa-brands fa-instagram fa-xl" style="color: #FCEBE3;"></i>
+                        <i class="fa-brands fa-line fa-xl" style="color: #FCEBE3;"></i>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            <div class="footer_remark">
+                <p>©Copyrights 2019 GoGo咖啡廳 All rights reserved
+                </p>
+                <p>本網站為TibaMe_前端設計工程師班學員專題成果作品本平台僅供學習、展示之用。</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script>
+        AOS.init();
+    </script>
+
+
+
+</body>
+</html>

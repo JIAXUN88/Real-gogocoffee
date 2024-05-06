@@ -1,0 +1,103 @@
+.footer_bgc{
+    background-color: #4C3D27;
+}
+.footer_logo_con{
+    display: flex;
+    justify-content:flex-start
+}
+.footer_logo{
+    max-width: 80px;
+    padding: 10px 0;
+    margin-left: 24px;
+}
+.footer_logo img{
+    width: 100%;
+}
+.footer_con{
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin:30px 0 0 50px;
+}
+.footer_con .footer_contact{
+    margin: 10px;
+    padding-left: 60px;
+}
+.footer_con .footer_contact p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #FCEBE3;
+    padding: 10px;
+    letter-spacing: 3px;
+}
+.footer_con .footer_nav{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    align-items:center;
+}
+.footer_nav p {
+    margin: 12px 0 12px 20px;
+    padding: 10px;
+}
+.footer_nav p a{
+    color: #FCEBE3;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+}
+.footer_remark p{
+    font-size: 14px;
+    line-height: 26px;
+    color: #FCEBE3;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+.footer_follow{
+    margin-left: 30px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer_follow_title p{
+    font-size: 16px;
+    color: #FCEBE3;
+    padding: 20px;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+.footer_follow_icon{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.footer_slice{
+    width: 4px;
+    height: 100px;
+    margin-top: 20px;
+    background-color: #FCEBE3 ;
+}
+.footer_remark{
+    text-align: center;
+    padding-top: 40px;
+}
+.footer_remark p{
+    font-size: 14px;
+    line-height: 26px;
+    color: #FCEBE3;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+@media screen and (max-width:1024px){
+}
+@media screen and (max-width:767px){
+    .footer_logo, .footer_slice, .footer_nav p, .footer_follow_title, .footer_follow_icon{
+        display: none;
+    }
+    .footer_contact{
+        margin-left: 160px;
+    }
+}
