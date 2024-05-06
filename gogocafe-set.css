@@ -87,7 +87,6 @@ body{
     max-width: 1200px;
     width: 100%;
     margin: 160px auto 300px auto;
-    outline: 1px solid red;
 }
 .about_txt_title{
     display: flex;
