@@ -102,12 +102,13 @@ body{
 }
 .about_txt_title h3 + h3:before{
     content: "";
-    width: 100px;
+    max-width: 100px;
+    width: 100%;
     height: 3px;
     background-color: #F8C747;
     position: absolute;
-    top: 30px;
-    left: 340px;
+    top: 50%;
+    left: 30%;
 }
 .about_txt_title h3 + h3:after{
     content: "";
@@ -115,8 +116,8 @@ body{
     height: 3px;
     background-color: #F8C747;
     position: absolute;
-    top: 30px;
-    right: 340px;
+    top: 50%;
+    right: 30%;
 }
 @media screen and (max-width: 1024px){
     .about_txt_title h3 + h3:before{
@@ -137,13 +138,13 @@ body{
         position: absolute;
         width: 18%;
         top: 50%;
-        left: 0;
+        left: 4%;
     }
     .about_txt_title h3 + h3:after{
         position: absolute;
         width: 18%;
         top: 50%;
-        right: 0;
+        right: 4%;
     }
 }
 .about_box{
@@ -285,8 +286,8 @@ body{
     height: 3px;
     background-color: #F8C747;
     position: absolute;
-    top: 30px;
-    left: 340px;
+    top: 50%;
+    left: 32%;
 }
 .news_title h3 + h3:after{
     content: "";
@@ -294,8 +295,37 @@ body{
     height: 3px;
     background-color: #F8C747;
     position: absolute;
-    top: 30px;
-    right: 340px;
+    top: 50%;
+    right: 32%;
+}
+@media screen and (max-width:1024px){
+    .news_title h3 + h3:before{
+        width: 18%;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+    }
+    .news_title h3 + h3:after{
+        width: 18%;
+        position: absolute;
+        top: 50%;
+        right: 10%;
+    }
+}
+@media screen and (max-width:767px){
+    .news_title h3 + h3:before{
+        width: 18%;
+        position: absolute;
+        top: 50%;
+        left: 8%;
+    }
+    .news_title h3 + h3:after{
+        width: 18%;
+        position: absolute;
+        top: 50%;
+        right: 8%;
+    }
+    
 }
 #news_button:hover{
     background-color: #F8C747;
@@ -433,8 +463,8 @@ html,
     height: 3px;
     background-color: #F8C747;
     position: absolute;
-    top: 30px;
-    left: 340px;
+    top: 50%;
+    left: 30%;
 }
 .product_title h3 + h3:after{
     content: "";
@@ -442,8 +472,8 @@ html,
     height: 3px;
     background-color: #F8C747;
     position: absolute;
-    top: 30px;
-    right: 340px;
+    top: 50%;
+    right: 30%;
 }
 @media screen and (max-width:1024px){
     .product_title h3 + h3:before{
@@ -464,13 +494,13 @@ html,
         width: 18%;
         position: absolute;
         top: 50%;
-        left: 0;
+        left: 4%;
     }
     .product_title h3 + h3:after{
         width: 18%;
         position: absolute;
         top: 50%;
-        right: 0;
+        right: 4%;
     }
     
 }
@@ -591,7 +621,7 @@ html,
 }
 .app_box{
     max-width: 1100px;
-    width: 100%;
+    /* width: 100%; */
     margin: auto;
     display: flex;
     padding: 60px 0;
