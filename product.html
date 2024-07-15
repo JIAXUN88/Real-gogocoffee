@@ -87,9 +87,10 @@
                     </ul>
                 </div>
                 <div class="select_item">
-                    <p class="select_drink">飲品</p>
-                    <p>美食</p>
-                    <p>甜點</p>
+                    <!-- <p class="select_item_option" data-section="product_all" onclick="showSection('product_all', this)">全部</p> -->
+                    <p class="select_item_option" data-section="product_drink" onclick="showSection('product_drink', this)">飲品</p>
+                    <p class="select_item_option" data-section="product_food" onclick="showSection('product_food', this)">美食</p>
+                    <p class="select_item_option" data-section="product_dessert" onclick="showSection('product_dessert', this)">甜點</p>
                 </div>
             </div>
         </div>
@@ -97,43 +98,268 @@
 
 
     <!-- 第四欄 咖啡系列 -->
-    <section data-aos="zoom-in" data-aos-duration="1500" class="drink_section">
-        <div class="drink_container">
-            <div class="drink_row">
-                <div class="coffee_series">
-                    <div class="coffee_series_left">
-                        <img src="./pic/product/product-coffee-left.png" alt="">
-                    </div>
-                    <div class="coffee_series_right">
-                        <div class="coffee_series_right_txt_bgc">
+    <section class="product_section">
+        <div class="product_container">
+            <div class="product_row">
+                <div id="product_drink" class="product_drink" style="display: none;">
+                    <div class="coffee_series">
+                        <div class="coffee_series_left">
+                            <img src="./pic/product/product-coffee-left.png" alt="">
                         </div>
-                        <div class="coffee_series_right_txt">
-                            <div class="coffee_series_right_title">
-                                <p>咖啡系列</p>
+                        <div class="coffee_series_right">
+                            <div class="coffee_series_right_txt_bgc">
                             </div>
-                            <div class="coffee_series_right_con">
-                                <ul>
-                                    <li>咖啡之夢 ---------------------------- $55</li>
-                                    <li>義式濃情 ---------------------------- $50</li>
-                                    <li>天使拿鐵 ---------------------------- $45</li>
-                                    <li>經典濃縮 ---------------------------- $40</li>
-                                    <li>奶沫之戀 ---------------------------- $60</li>
-                                    <li>魔法卡布 ---------------------------- $55</li>
-                                    <li>冰雪拿鐵 ---------------------------- $50</li>
-                                </ul>
+                            <div class="coffee_series_right_txt">
+                                <div class="coffee_series_right_title">
+                                    <p>咖啡系列</p>
+                                </div>
+                                <div class="coffee_series_right_con">
+                                    <ul>
+                                        <li>咖啡之夢 ---------------------------- $55</li>
+                                        <li>義式濃情 ---------------------------- $50</li>
+                                        <li>天使拿鐵 ---------------------------- $45</li>
+                                        <li>經典濃縮 ---------------------------- $40</li>
+                                        <li>奶沫之戀 ---------------------------- $60</li>
+                                        <li>魔法卡布 ---------------------------- $55</li>
+                                        <li>冰雪拿鐵 ---------------------------- $50</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coffee_series">
+                        <div class="coffee_series_left">
+                            <img src="./pic/product/product_milk_tea_left.png" alt="">
+                        </div>
+                        <div class="coffee_series_right">
+                            <div class="milktea_series_right_txt_bgc">
+                            </div>
+                            <div class="coffee_series_right_txt">
+                                <div class="coffee_series_right_title">
+                                    <p>奶茶系列</p>
+                                </div>
+                                <div class="coffee_series_right_con">
+                                    <ul>
+                                        <li>奶茶樂園 ------------------------------ $40</li>
+                                        <li>起司奶蓋香 ---------------------------- $65</li>
+                                        <li>珍珠奶茶寶 ---------------------------- $60</li>
+                                        <li>波波奶茶夢 ---------------------------- $60</li>
+                                        <li>鮮果鮮奶茶 ---------------------------- $70</li>
+                                        <li>奶香抹茶風 ---------------------------- $65</li>
+                                        <li>台式奶茶 ------------------------------ $40</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coffee_series">
+                        <div class="coffee_series_left">
+                            <img src="./pic/product/product_fruit_tea_left.png" alt="">
+                        </div>
+                        <div class="coffee_series_right">
+                            <div class="fruittea_series_right_txt_bgc">
+                            </div>
+                            <div class="coffee_series_right_txt">
+                                <div class="coffee_series_right_title">
+                                    <p>水果茶系列</p>
+                                </div>
+                                <div class="coffee_series_right_con">
+                                    <ul>
+                                        <li>水果花園樂 ---------------------------- $60</li>
+                                        <li>檸檬清爽風 ---------------------------- $55</li>
+                                        <li>熱情芒果夏 ---------------------------- $75</li>
+                                        <li>草莓甜蜜吻 ---------------------------- $80</li>
+                                        <li>藍莓蔓越舞 ---------------------------- $85</li>
+                                        <li>西瓜夏日情 ---------------------------- $55</li>
+                                        <li>桃子柔情味 ---------------------------- $60</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="drink_coffee_box"></div>
+                <div id="product_food" class="product_food" style="display: none;">
+                    <div class="coffee_series">
+                        <div class="coffee_series_left">
+                            <img src="./pic/product/product_pasta_left.png" alt="">
+                        </div>
+                        <div class="coffee_series_right">
+                            <div class="pasta_series_right_txt_bgc">
+                            </div>
+                            <div class="coffee_series_right_txt">
+                                <div class="coffee_series_right_title">
+                                    <p>義大利麵系列</p>
+                                </div>
+                                <div class="coffee_series_right_con">
+                                    <ul>
+                                        <li>海鮮奶油 ---------------------------- $170</li>
+                                        <li>檸檬奶油 ---------------------------- $150</li>
+                                        <li>松露奶油 ---------------------------- $180</li>
+                                        <li>番茄羅勒 ---------------------------- $130</li>
+                                        <li>蝦仁青醬 ---------------------------- $140</li>
+                                        <li>菠菜青醬 ---------------------------- $110</li>
+                                        <li>蒜香培根 ---------------------------- $110</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coffee_series">
+                        <div class="coffee_series_left">
+                            <img src="./pic/product/product-sandwich-left.png" alt="">
+                        </div>
+                        <div class="coffee_series_right">
+                            <div class="sandwitch_series_right_txt_bgc">
+                            </div>
+                            <div class="coffee_series_right_txt">
+                                <div class="coffee_series_right_title">
+                                    <p>漢堡系列</p>
+                                </div>
+                                <div class="coffee_series_right_con">
+                                    <ul>
+                                        <li>經典牛肉 --------------------------- $90</li>
+                                        <li>培根芝士 --------------------------- $70</li>
+                                        <li>蘑菇瑞士 --------------------------- $80</li>
+                                        <li>酪梨雞肉 --------------------------- $80</li>
+                                        <li>煙燻鮭魚 --------------------------- $90</li>
+                                        <li>泰式辣雞 --------------------------- $90</li>
+                                        <li>照燒雞肉 --------------------------- $70</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coffee_series">
+                        <div class="coffee_series_left">
+                            <img src="./pic/product/product-salad-left.png" alt="">
+                        </div>
+                        <div class="coffee_series_right">
+                            <div class="salad_series_right_txt_bgc">
+                            </div>
+                            <div class="coffee_series_right_txt">
+                                <div class="coffee_series_right_title">
+                                    <p>沙拉系列</p>
+                                </div>
+                                <div class="coffee_series_right_con">
+                                    <ul>
+                                        <li>雞肉玉米 ---------------------------- $70</li>
+                                        <li>煙燻鴨胸 ---------------------------- $80</li>
+                                        <li>藜麥蔬菜 ---------------------------- $60</li>
+                                        <li>水果堅果 ---------------------------- $50</li>
+                                        <li>泰式牛肉 ---------------------------- $80</li>
+                                        <li>蘆筍火腿 ---------------------------- $70</li>
+                                        <li>南瓜扁豆 ---------------------------- $60</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="product_dessert" class="product_dessert" style="display: none;">
+                    <div class="coffee_series">
+                        <div class="coffee_series_left">
+                            <img src="./pic/product/product-macaron-left.png" alt="">
+                        </div>
+                        <div class="coffee_series_right">
+                            <div class="macaron_series_right_txt_bgc">
+                            </div>
+                            <div class="coffee_series_right_txt">
+                                <div class="coffee_series_right_title">
+                                    <p>馬卡龍系列</p>
+                                </div>
+                                <div class="coffee_series_right_con">
+                                    <ul>
+                                        <li>香草奶油 ---------------------------- $30</li>
+                                        <li>濃郁巧克 ---------------------------- $40</li>
+                                        <li>覆盆子醬 ---------------------------- $40</li>
+                                        <li>濃香咖啡 ---------------------------- $30</li>
+                                        <li>開心果醬 ---------------------------- $40</li>
+                                        <li>檸檬奶油 ---------------------------- $30</li>
+                                        <li>鹽味焦糖----------------------------- $30</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coffee_series">
+                        <div class="coffee_series_left">
+                            <img src="./pic/product/product-cake-left.png" alt="">
+                        </div>
+                        <div class="coffee_series_right">
+                            <div class="cake_series_right_txt_bgc">
+                            </div>
+                            <div class="coffee_series_right_txt">
+                                <div class="coffee_series_right_title">
+                                    <p>蛋糕系列</p>
+                                </div>
+                                <div class="coffee_series_right_con">
+                                    <ul>
+                                        <li>蒙布朗 ---------------------------- $60</li>
+                                        <li>紅絲絨 ---------------------------- $70</li>
+                                        <li>黑森林 ---------------------------- $60</li>
+                                        <li>提拉米 ---------------------------- $60</li>
+                                        <li>芝士塔  ---------------------------- $60</li>
+                                        <li>檸檬塔 ---------------------------- $60</li>
+                                        <li>胡蘿蔔 ---------------------------- $50</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coffee_series">
+                        <div class="coffee_series_left">
+                            <img src="./pic/product/product-cookies-left.png" alt="">
+                        </div>
+                        <div class="coffee_series_right">
+                            <div class="cookies_series_right_txt_bgc">
+                            </div>
+                            <div class="coffee_series_right_txt">
+                                <div class="coffee_series_right_title">
+                                    <p>餅乾系列</p>
+                                </div>
+                                <div class="coffee_series_right_con">
+                                    <ul>
+                                        <li>焦糖 ---------------------------- $20</li>
+                                        <li>檸檬 ---------------------------- $25</li>
+                                        <li>花生 ---------------------------- $20</li>
+                                        <li>綠茶 ---------------------------- $25</li>
+                                        <li>杏仁 ---------------------------- $25</li>
+                                        <li>燕麥 ---------------------------- $20</li>
+                                        <li>巧克 ---------------------------- $30</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <script>
+        function showSection(sectionId, element) {
+            // 隱藏所有的產品區塊
+            document.querySelectorAll('.product_drink, .product_food, .product_dessert, .product_all').forEach(function (section) {
+                section.style.display = 'none';
+            });
+            // 顯示被點擊的產品區塊
+            document.getElementById(sectionId).style.display = 'block';
+            
+            // 更新按鈕樣式
+            document.querySelectorAll('.select_item_option').forEach(function (btn) {
+                btn.classList.remove('active');
+            });
+            element.classList.add('active');
+        }
+        
+        // 初始化顯示第一個區塊
+        document.getElementById('product_drink').style.display = 'block';
+        document.querySelector('.select_item_option[data-section="product_drink"]').classList.add('active');
+    </script>
+
 
     <!-- 第五欄 奶茶系列 -->
-
-    <section data-aos="zoom-in" data-aos-duration="1500" class="drink_section">
+    <!-- <section class="drink_section">
         <div class="drink_container">
             <div class="drink_row">
                 <div class="coffee_series">
@@ -161,16 +387,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="drink_coffee_box"></div>
             </div>
         </div>
-    </section>
-
+    </section> -->
 
 
     <!-- 第六欄 水果茶系列 -->
-
-    <section data-aos="zoom-in" data-aos-duration="1500" class="drink_section">
+    <!-- <section class="drink_section">
         <div class="drink_container">
             <div class="drink_row">
                 <div class="coffee_series">
@@ -198,10 +421,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="drink_coffee_box"></div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
 
