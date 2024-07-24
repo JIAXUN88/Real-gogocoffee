@@ -142,6 +142,9 @@ body{
     outline: 6px dotted #F8C747;
     border-radius: 100px;
 }
+.meet_circle_1, .meet_circle_2, .meet_circle_3, .meet_circle_4, .meet_circle_5, .meet_circle_6:hover{
+    cursor: pointer;
+}
 
 @media screen and (min-width: 769px) {
     /* 在大屏幕上恢復原來的排版 */
@@ -247,9 +250,13 @@ body{
 .photo_pic_small img:not(:first-child) {
     filter: brightness(40%);
 }
+.photo_pic_small img:hover{
+    cursor: pointer;
+}
 .photo_row .photo_intr2, .photo_intr3,.photo_intr4, .photo_intr5, .photo_intr6{
     display: none;
-}@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 1024px) {
     .photo_pic .photo_pic_big{
         margin-bottom: 0px;
     }
